@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HelloDroidActivity"
+>
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp" app:srcCompat="@drawable/hellodroid" android:id="@+id/droidImage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="99dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="105dp" android:layout_marginEnd="106dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="95dp"
+            app:layout_constraintBottom_toTopOf="@+id/clickCounter"/>
+    <TextView
+            android:text="@string/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/clickCounter"
+            android:padding="10dp" android:paddingLeft="10dp"
+            android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="298dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="147dp" android:layout_marginEnd="148dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
